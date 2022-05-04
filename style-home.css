@@ -93,8 +93,9 @@ nav a:hover{
 
 footer {
     text-align: center;
-    background: url(bg.jpg)
+    background: url(bg.jpg);
     padding: 20px 0;
+    
 }
 
 .copyright {
