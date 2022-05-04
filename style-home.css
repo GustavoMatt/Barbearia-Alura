@@ -93,7 +93,7 @@ nav a:hover{
 
 footer {
     text-align: center;
-    background: url("bg.jpg") ;   /*ADICIONA IMAGEM DE FUNDO*/
+    background: image(imagens/bg.jpg);
     padding: 20px 0;
 }
 
