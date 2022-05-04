@@ -1,0 +1,283 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0 ;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {                    /*MEXENDO NA LISTA COMO UM TODO*/
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {        /*MEXENDO NOS ITENS DE NAVEGAÇÃO */
+    display: inline ;
+    margin: 0 0 0 15px;
+}
+
+nav a {       /* MEXENDO NOS TEXTOS DOS ITENS DA NAVEGAÇÃO*/
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration:underline;
+
+}
+
+.produtos {           /*MEXENDO NA LISTA COMO UM TODO*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{     /* MEXENDO NOS ITENS DA LISTA INDIVIDUALMENTE*/
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box ;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover {      /*ALTERA A COR DA BORDA COM O PASSAR DO MOUSE DENTRO DA CAIXA*/
+    border-color: #c78c19;
+        
+}
+
+.produtos li:active {     /*ALTERA A COR DA BORDA COM O CLIQUE DO MOUSE DENTRO DA CAIXA*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 { /*AUMENTA O TAMANHO DA FONTE QUANDO O MOUSE ESTÁ EM CIMA DO ELEMENTO*/
+    font-size: 32px;
+}
+
+.produtos h2 {       /* MEXENDO NA PARTE DE TITULOS*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    }
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {   /*USADO PARA EDITAR O RODAPÉ DA PAGINA*/
+    text-align: center;
+    background: url("bg.jpg") ;   /*ADICIONA IMAGEM DE FUNDO*/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+    
+}
+
+
+
+form{
+    margin: 40px 40px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.input-padrao {
+    display: block;         
+    margin-bottom: 20px;   /*aumentou o espaço entre a caixa e a etiqueta abaixo*/
+    padding: 10px 25px;   /*aumentou a largura e altura da caixa, entre a borda e o*/
+    width: 50%;   /*aumentou a largura da caixa*/
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {  /*editando o botão de enviar*/
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*Altera a transição da cor de fundo do botão, aumentando seu tempo em 1 segundo.*/ /*todas as transições serão suaves por 1 segundo*/
+    cursor: pointer;  /*faz com que o o mouse vire a "mãozinha" quando está por cima do botão*/
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); /*aumenta o tamanho do botão em 20% quando o mouse está por cima*/
+    /*transform: rotate(70deg);*/
+}
+
+.enviar:active {
+    background: yellow;
+}
+
+table {
+    margin: 20px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+
+/*CSS da página inicial*/
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;   /* a fonte tera o dobro de tamanho da fonte principal*/
+    margin: 0 0 1em;
+    clear: left;
+}
+
+/*.titulo-principal:first-letter{ /*seleciona a primeira letra desta classe para modificar
+    font-weight: bold;
+}
+*/
+
+.titulo-principal::before{
+    content:"[ "
+}
+
+.titulo-principal:after{
+    content: " ]";
+}
+
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal b {
+    font-weight: bold;
+}
+
+.principal i {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888); /*ADICIONA TRANSIÇÃO GRADIENTE ORIENTADA DE CORES*/ 
+    
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {                /*REVISAR MARGEM DESTA PORRA "margin: 2em auto;"*/
+    padding: 3em 0;
+    background: #888888;
+    
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5; /*aumenta a altura da linha criando um espaçamento entre os itens*/
+}
+
+.itens:first-child {  /*seleciona a "primeira criança" da lista*/
+    font-weight: bold;
+}
+
+.itens::before{            /*adiciona um conteudo antes dos itens da lista*/
+    content: "✦";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;  /*REVISAR MARGEM DESTA PORRA "margin: 2em auto;"*/
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }    
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+}
